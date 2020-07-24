@@ -3,14 +3,16 @@ import { Switch, Route } from 'react-router-dom';
 import Articles from '../Articles';
 import Nav from '../../components/Nav';
 import Article from '../Article';
+import Category from '../Category';
 
 function App() {
 	return (
 		<div className="App">
 			<Nav />
 			<Switch>
-				<Route exact path="/" component={Articles} />
-				<Route exact path="/article/:id" component={Article} />
+				<Route path="/" component={Articles} exact />
+				<Route path="/article/:id" component={Article} exact />
+				<Route path="/category/:id" component={Category} exact />
 			</Switch>
 		</div>
 	);
