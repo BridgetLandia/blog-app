@@ -1,7 +1,7 @@
 import React from 'react';
-import Articles from '../../components/Articles';
+import Articles from '../../components/Articles/articles';
 import Query from '../../components/Query';
-import ARTICLES_QUERY from '../../queries/article/articles';
+import ARTICLES_QUERY from '../../queries/articles/articles';
 
 const Home = () => {
 	return (
